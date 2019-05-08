@@ -19,6 +19,8 @@
 
 body {
   font-family: 'Kalam', cursive;
+  background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("https://images.unsplash.com/photo-1542831371-32f555c86880?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
   background-color: #eeeeee;
   margin: 0 auto;
   text-align: center;
@@ -26,7 +28,8 @@ body {
 
 
 h1, h2, h3 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   line-height: 20px;
   color: #1A4330;
   margin-bottom: 25px;
@@ -37,8 +40,8 @@ p {
 }
 
 img {
-    border-radius: 90px;
-    width: 250px;
+    border-radius: 100px;
+    width: 200px;
 }
 
 h1 {
@@ -56,6 +59,7 @@ li {
 a {
   color: #21076b;
   font-size: 1.25em;
+  text-decoration: none;
 }
 
 i {
@@ -73,26 +77,85 @@ i {
 }
 
 .container {
-  width: 500px;
-  margin: 0 auto;
+  margin: 15px auto;
+  max-width: 500px;
+  /*background-color: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), white;*/
 }
 
-.title {
+.spinner {
+  animation-name: spin;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
+.social h2 {
+  margin: 0;
 }
 
 .content {
-  background-color: #ffffff;
+  background-color: white;
   padding: 25px;
-
 }
 
 .social {
   background-color: #ffffff;
   padding: 15px;
+  margin-top: 20px;
 }
 
 a:hover {
   color: #42946C;
+}
 
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: hsla(152, 44%, 18%, 0.72);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.9s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.9s;
+}
+
+.align-right {
+  text-align: right;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
