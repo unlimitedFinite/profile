@@ -1,0 +1,98 @@
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  font-family: 'Kalam', cursive;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+h1, h2, h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 20px;
+  color: #1A4330;
+  margin-bottom: 25px;
+}
+
+p {
+  margin: 20px 40px 40px 40px;
+}
+
+img {
+    border-radius: 90px;
+    width: 250px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+a {
+  color: #21076b;
+  font-size: 1.25em;
+}
+
+i {
+  color: grey;
+  font-size: 3em;
+}
+
+.btn-green {
+  background-color: #bcf7bb;
+  padding: 7px 30px;
+  border-radius: 50px;
+  box-shadow: 2px 2px lightgrey;
+  opacity: 0.9;
+  margin: 10px 0;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 25px;
+
+}
+
+.social {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+a:hover {
+  color: #42946C;
+
+}
