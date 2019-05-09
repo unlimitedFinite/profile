@@ -19,7 +19,7 @@
 
 body {
   font-family: 'Kalam', cursive;
-  background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("https://images.unsplash.com/photo-1542831371-32f555c86880?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-image: linear-gradient(180deg, transparent 70%, rgba(33, 7, 107, 0.2) 0), url("https://images.unsplash.com/photo-1542831371-32f555c86880?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
   background-color: #eeeeee;
   margin: 0 auto;
@@ -27,12 +27,19 @@ body {
 }
 
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 20px;
   color: #1A4330;
   margin-bottom: 25px;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1A4330;
+  margin: 10px; 
 }
 
 p {
@@ -69,14 +76,14 @@ i {
   font-size: 3em;
 }
 
-.btn-green {
+/* .btn-green {
   background-color: #bcf7bb;
   padding: 7px 30px;
   border-radius: 50px;
   box-shadow: 2px 2px lightgrey;
   opacity: 0.7;
   margin: 10px 0;
-}
+} */
 
 .container {
   margin: 15px auto;
@@ -98,6 +105,18 @@ li:hover .spinner-reverse {
   animation-timing-function: linear;
 }
 
+li:active .spinner-fast {
+  animation-name: spin_reverse;
+  animation-duration: 250ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: 3s;
+  opacity: 0.1;
+  width: 5000px;
+
+}
+
+
 /*li:hover .spinner {
   animation-duration: 999999999999ms;
 }
@@ -117,8 +136,8 @@ li:hover .spinner-reverse {
 
 .social {
   background-color: #ffffff;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 1px;
+  margin-top: 12px;
 }
 
 a:hover {
