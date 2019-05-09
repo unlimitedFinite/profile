@@ -55,6 +55,8 @@ ul {
 li {
   list-style-type: none;
   display: inline;
+  font-size: 1em;
+  margin: 0 10px;
 }
 a {
   color: #21076b;
@@ -72,7 +74,7 @@ i {
   padding: 7px 30px;
   border-radius: 50px;
   box-shadow: 2px 2px lightgrey;
-  opacity: 0.9;
+  opacity: 0.7;
   margin: 10px 0;
 }
 
@@ -82,11 +84,26 @@ i {
   /*background-color: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), white;*/
 }
 
-.spinner {
+li:hover .spinner {
   animation-name: spin;
   animation-duration: 2500ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+li:hover .spinner-reverse {
+  animation-name: spin_reverse;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*li:hover .spinner {
+  animation-duration: 999999999999ms;
+}
+
+li:hover .spinner-reverse {
+  animation-duration: 999999999999ms;*/
 }
 
 .social h2 {
@@ -111,7 +128,7 @@ a:hover {
 .button {
   display: inline-block;
   border-radius: 8px;
-  background-color: hsla(152, 44%, 18%, 0.72);
+  background-color: hsla(152, 44%, 18%, 0.62);
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -132,6 +149,15 @@ a:hover {
     }
 }
 
+@keyframes spin_reverse {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -148,7 +174,7 @@ a:hover {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .button:hover span {
