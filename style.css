@@ -19,7 +19,7 @@
 
 body {
   font-family: 'Lora', serif;
-  /*background-image: linear-gradient(180deg, transparent 70%, rgba(33, 7, 107, 0.2) 0), url("https://images.unsplash.com/photo-1542831371-32f555c86880?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");*/
+  background-image: linear-gradient(180deg, transparent 70%, rgba(33, 7, 107, 0.2) 0), url("https://images.unsplash.com/photo-1542831371-32f555c86880?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-color: grey;
   background-size: cover;
   background-color: #d0dae2;
@@ -213,14 +213,36 @@ a:hover {
 .card {
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin: 0 auto;
   float: none;
   max-width: 400px;
+  box-shadow: 4px 5px 14px slategrey;
+  border: 2px;
 }
 
-.card-image {
+#crypto {
   background-image: url('./images/c-balance.png');
+  background-size: 100% 120px;
+  background-position: center bottom;
+  height: 120px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#cocktail {
+  background-image: url('./images/cocktail.jpg');
+  background-size: 100% 120px;
+  background-position: center bottom;
+  height: 120px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#pokemon {
+  background-image: url('./images/pokemon.png');
   background-size: 100% 120px;
   background-position: center bottom;
   height: 120px;
